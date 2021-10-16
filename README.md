@@ -1,4 +1,10 @@
 # IYS
-KPI course
+## KPI course
 
-##Andriychuk Bohdan, IS-83
+#### Andriychuk Bohdan, IS-83
+
+Репозитерій з предмета ІУС
+
+Лабораторна №1
+
+1. Модуль Introduction to Azure Virtual Machines
