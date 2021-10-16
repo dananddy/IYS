@@ -1,0 +1,223 @@
+{
+  "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731",
+  "name": "CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731",
+  "type": "Microsoft.Resources/deployments",
+  "tags": {
+    "primaryResourceId": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourcegroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Compute/virtualMachines/bhdn-andriychuk-ubuntu",
+    "marketplaceItemId": "canonical.0001-com-ubuntu-server-focal20_04-lts-ARM",
+    "provisioningHash": "SolutionProvider"
+  },
+  "properties": {
+    "templateHash": "1890972443238083949",
+    "parameters": {
+      "location": {
+        "type": "String",
+        "value": "westus"
+      },
+      "networkInterfaceName": {
+        "type": "String",
+        "value": "bhdn-andriychuk-ubun144"
+      },
+      "enableAcceleratedNetworking": {
+        "type": "Bool",
+        "value": true
+      },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "value": "bhdn-andriychuk-ubuntu-nsg"
+      },
+      "networkSecurityGroupRules": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "SSH",
+            "properties": {
+              "priority": 300,
+              "protocol": "TCP",
+              "access": "Allow",
+              "direction": "Inbound",
+              "sourceAddressPrefix": "*",
+              "sourcePortRange": "*",
+              "destinationAddressPrefix": "*",
+              "destinationPortRange": "22"
+            }
+          }
+        ]
+      },
+      "subnetName": {
+        "type": "String",
+        "value": "default"
+      },
+      "virtualNetworkName": {
+        "type": "String",
+        "value": "learn-a53164fa-a23e-436d-b303-556255c811c5-vnet"
+      },
+      "addressPrefixes": {
+        "type": "Array",
+        "value": [
+          "10.0.0.0/16"
+        ]
+      },
+      "subnets": {
+        "type": "Array",
+        "value": [
+          {
+            "name": "default",
+            "properties": {
+              "addressPrefix": "10.0.0.0/24"
+            }
+          }
+        ]
+      },
+      "publicIpAddressName": {
+        "type": "String",
+        "value": "bhdn-andriychuk-ubuntu-ip"
+      },
+      "publicIpAddressType": {
+        "type": "String",
+        "value": "Dynamic"
+      },
+      "publicIpAddressSku": {
+        "type": "String",
+        "value": "Basic"
+      },
+      "virtualMachineName": {
+        "type": "String",
+        "value": "bhdn-andriychuk-ubuntu"
+      },
+      "virtualMachineComputerName": {
+        "type": "String",
+        "value": "bhdn-andriychuk-ubuntu"
+      },
+      "virtualMachineRG": {
+        "type": "String",
+        "value": "learn-a53164fa-a23e-436d-b303-556255c811c5"
+      },
+      "osDiskType": {
+        "type": "String",
+        "value": "Premium_LRS"
+      },
+      "virtualMachineSize": {
+        "type": "String",
+        "value": "Standard_D2s_v3"
+      },
+      "adminUsername": {
+        "type": "String",
+        "value": "bhdn-busido"
+      },
+      "adminPassword": {
+        "type": "SecureString"
+      }
+    },
+    "mode": "Incremental",
+    "debugSetting": {
+      "detailLevel": "None"
+    },
+    "provisioningState": "Succeeded",
+    "timestamp": "2021-10-16T15:29:42.4828275Z",
+    "duration": "PT55.3503761S",
+    "correlationId": "a229b56c-3919-4e5e-b5c5-ca961d0928ca",
+    "providers": [
+      {
+        "namespace": "Microsoft.Network",
+        "resourceTypes": [
+          {
+            "resourceType": "networkInterfaces",
+            "locations": [
+              "westus"
+            ]
+          },
+          {
+            "resourceType": "networkSecurityGroups",
+            "locations": [
+              "westus"
+            ]
+          },
+          {
+            "resourceType": "virtualNetworks",
+            "locations": [
+              "westus"
+            ]
+          },
+          {
+            "resourceType": "publicIpAddresses",
+            "locations": [
+              "westus"
+            ]
+          }
+        ]
+      },
+      {
+        "namespace": "Microsoft.Compute",
+        "resourceTypes": [
+          {
+            "resourceType": "virtualMachines",
+            "locations": [
+              "westus"
+            ]
+          }
+        ]
+      }
+    ],
+    "dependencies": [
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/networkSecurityGroups/bhdn-andriychuk-ubuntu-nsg",
+            "resourceType": "Microsoft.Network/networkSecurityGroups",
+            "resourceName": "bhdn-andriychuk-ubuntu-nsg"
+          },
+          {
+            "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/virtualNetworks/learn-a53164fa-a23e-436d-b303-556255c811c5-vnet",
+            "resourceType": "Microsoft.Network/virtualNetworks",
+            "resourceName": "learn-a53164fa-a23e-436d-b303-556255c811c5-vnet"
+          },
+          {
+            "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/publicIpAddresses/bhdn-andriychuk-ubuntu-ip",
+            "resourceType": "Microsoft.Network/publicIpAddresses",
+            "resourceName": "bhdn-andriychuk-ubuntu-ip"
+          }
+        ],
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/networkInterfaces/bhdn-andriychuk-ubun144",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "bhdn-andriychuk-ubun144"
+      },
+      {
+        "dependsOn": [
+          {
+            "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/networkInterfaces/bhdn-andriychuk-ubun144",
+            "resourceType": "Microsoft.Network/networkInterfaces",
+            "resourceName": "bhdn-andriychuk-ubun144"
+          }
+        ],
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Compute/virtualMachines/bhdn-andriychuk-ubuntu",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "bhdn-andriychuk-ubuntu"
+      }
+    ],
+    "outputs": {
+      "adminUsername": {
+        "type": "String",
+        "value": "bhdn-busido"
+      }
+    },
+    "outputResources": [
+      {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Compute/virtualMachines/bhdn-andriychuk-ubuntu"
+      },
+      {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/networkInterfaces/bhdn-andriychuk-ubun144"
+      },
+      {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/networkSecurityGroups/bhdn-andriychuk-ubuntu-nsg"
+      },
+      {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/publicIpAddresses/bhdn-andriychuk-ubuntu-ip"
+      },
+      {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/virtualNetworks/learn-a53164fa-a23e-436d-b303-556255c811c5-vnet"
+      }
+    ],
+    "validationLevel": "Template"
+  }
+}

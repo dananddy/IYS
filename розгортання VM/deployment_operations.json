@@ -1,0 +1,104 @@
+[
+  {
+    "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731/operations/0BE9DD8A88D45C82",
+    "operationId": "0BE9DD8A88D45C82",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-10-16T15:29:41.3542401Z",
+      "duration": "PT40.1183884S",
+      "trackingId": "ec0a2a90-cc5a-49f5-96e5-2f0525fe4344",
+      "serviceRequestId": "739ca058-c990-459c-99cf-35e7423c2264",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Compute/virtualMachines/bhdn-andriychuk-ubuntu",
+        "resourceType": "Microsoft.Compute/virtualMachines",
+        "resourceName": "bhdn-andriychuk-ubuntu"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731/operations/A6BDB66376368F92",
+    "operationId": "A6BDB66376368F92",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-10-16T15:29:07.6715505Z",
+      "duration": "PT6.4356988S",
+      "trackingId": "8b56bd5d-1c2f-46b1-b14e-d48a7aa3edb5",
+      "serviceRequestId": "fb1baf29-4911-4e46-85ac-ae993dc123b4",
+      "statusCode": "Created",
+      "targetResource": {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/networkInterfaces/bhdn-andriychuk-ubun144",
+        "resourceType": "Microsoft.Network/networkInterfaces",
+        "resourceName": "bhdn-andriychuk-ubun144"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731/operations/067053400CCA5A5A",
+    "operationId": "067053400CCA5A5A",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-10-16T15:29:01.1812288Z",
+      "duration": "PT9.3284205S",
+      "trackingId": "e518f5c0-3c58-4f74-ad4b-1e42fc1d7edf",
+      "serviceRequestId": "855ffb46-ac8e-43fe-b94e-175b9f15f8e6",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/virtualNetworks/learn-a53164fa-a23e-436d-b303-556255c811c5-vnet",
+        "resourceType": "Microsoft.Network/virtualNetworks",
+        "resourceName": "learn-a53164fa-a23e-436d-b303-556255c811c5-vnet"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731/operations/54055E5767CDE598",
+    "operationId": "54055E5767CDE598",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-10-16T15:28:59.2957324Z",
+      "duration": "PT7.4429241S",
+      "trackingId": "f6add64e-7081-4cdd-ba08-6e0ef95b203a",
+      "serviceRequestId": "04464876-5825-4380-bd6c-4d0aa06de068",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/networkSecurityGroups/bhdn-andriychuk-ubuntu-nsg",
+        "resourceType": "Microsoft.Network/networkSecurityGroups",
+        "resourceName": "bhdn-andriychuk-ubuntu-nsg"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731/operations/5826CCBEDE7773D2",
+    "operationId": "5826CCBEDE7773D2",
+    "properties": {
+      "provisioningOperation": "Create",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-10-16T15:28:59.6960612Z",
+      "duration": "PT7.8432529S",
+      "trackingId": "3994052d-95b0-4c72-8cfa-0991b358f0d1",
+      "serviceRequestId": "b09ca290-8951-40b8-8e52-2ae4b9d44538",
+      "statusCode": "OK",
+      "targetResource": {
+        "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Network/publicIpAddresses/bhdn-andriychuk-ubuntu-ip",
+        "resourceType": "Microsoft.Network/publicIpAddresses",
+        "resourceName": "bhdn-andriychuk-ubuntu-ip"
+      }
+    }
+  },
+  {
+    "id": "/subscriptions/f050a6ba-c5c8-4d47-a863-256a0713f288/resourceGroups/learn-a53164fa-a23e-436d-b303-556255c811c5/providers/Microsoft.Resources/deployments/CreateVm-canonical.0001-com-ubuntu-server-focal-2-20211016175731/operations/08585672087583452245",
+    "operationId": "08585672087583452245",
+    "properties": {
+      "provisioningOperation": "EvaluateDeploymentOutput",
+      "provisioningState": "Succeeded",
+      "timestamp": "2021-10-16T15:29:42.2714157Z",
+      "duration": "PT41.035564S",
+      "trackingId": "a262190d-41b0-47fc-b9ad-72f4d9bbb06a",
+      "statusCode": "OK"
+    }
+  }
+]
